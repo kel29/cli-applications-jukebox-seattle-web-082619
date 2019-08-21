@@ -15,7 +15,8 @@ def play(songs)
   elsif
     songs
   else
-    
+    "Invalid input, please try again"
+  end
 end
 
 def list(songs)
