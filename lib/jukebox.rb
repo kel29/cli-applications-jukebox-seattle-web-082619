@@ -12,7 +12,7 @@ def play
 end
 
 def list(songs)
-  n = 1
+  n = 0
   songs.map { |s| puts "#{n += 1}. #{s}" }
 end
 
