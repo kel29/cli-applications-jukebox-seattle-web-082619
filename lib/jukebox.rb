@@ -10,7 +10,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   s = gets.strip
-  if s.is_a? Integer && s < 9 && s > 0 
+  if s.to_i < 9 && s.to_i > 0 
     puts "Playing #{songs[s+1]}"
   elsif songs.include? s 
     puts "Playing #{s}"
