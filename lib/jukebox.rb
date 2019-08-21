@@ -8,7 +8,9 @@ def help
 end
 
 def play
-  
+  puts "Please enter a song name or number:"
+  s = gets.strip
+  if s
 end
 
 def list(songs)
