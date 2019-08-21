@@ -34,9 +34,9 @@ def run
   command = gets.strip
   until command == "exit"
     if command == "play"
-      play(songs)
+      play
     elsif command == "list"
-      list(songs)
+      list
     elsif command == "help"
       help
     end
