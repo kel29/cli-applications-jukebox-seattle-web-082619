@@ -33,10 +33,14 @@ def run
   puts "Please enter a command:"
   command = gets.strip
   until command == "exit"
-    case command
-      play(songs) when command == "play"
-      list(songs) when command == "list"
-      help when command == "help"
+    if command == "play"
+      play(songs)
+    elsif command == "list"
+      list(songs)
+    elsif command == "help"
+      help
     end
+    puts "Please enter a command:"
+    command = gets.strip
   end
 end
