@@ -11,8 +11,9 @@ def play
   
 end
 
-def list 
-  
+def list(songs)
+  n = 1
+  songs.map { |s| puts "#{n += 1}. #{s}" }
 end
 
 def exit_jukebox
