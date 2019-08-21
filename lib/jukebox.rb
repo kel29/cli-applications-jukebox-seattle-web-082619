@@ -10,7 +10,8 @@ end
 def play
   puts "Please enter a song name or number:"
   s = gets.strip
-  if s
+  if s.is_a? Integer && s < 9 && s > 0 
+    
 end
 
 def list(songs)
